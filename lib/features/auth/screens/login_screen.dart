@@ -1,7 +1,8 @@
 import "package:flutter/material.dart";
+import "package:whatsapp_ui/colors.dart";
 
 class LoginScreen extends StatefulWidget {
-  // static const routeName = '/login-screen';
+  static const routeName = '/login-screen';
 
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -12,6 +13,14 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text("Enter your Phone Number"),
+          elevation: 0,
+          backgroundColor: backgroundColor,
+        ),
+        body: Column(
+          children: [],
+        ));
   }
 }
