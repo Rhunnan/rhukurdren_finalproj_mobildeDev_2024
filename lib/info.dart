@@ -93,7 +93,7 @@ const messages = [
   },
   {
     "isMe": false,
-    "text": "Rivaan Ranawat",
+    "text": "One Piece",
     "time": "11:06 am",
   },
   {
