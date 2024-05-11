@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:whatsapp_ui/colors.dart';
+import 'package:whatsapp_ui/features/auth/screens/user_information_screen.dart';
 import 'package:whatsapp_ui/features/landing/screens/landing_page.dart';
 import 'package:whatsapp_ui/firebase_options.dart';
 import 'package:whatsapp_ui/router.dart';
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
               color: appBarColor,
             )),
         onGenerateRoute: (settings) => generateRoute(settings),
-        home: const LandingScreen()
+        home: const UserInformationScreen()
         //  const ResponsiveLayout(
         //   mobileScreenLayout: MobileLayoutScreen(),
         //   webScreenLayout: WebLayoutScreen(),
