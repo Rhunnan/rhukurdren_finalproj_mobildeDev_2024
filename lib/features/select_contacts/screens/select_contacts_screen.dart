@@ -10,6 +10,14 @@ class SelectContactsScreen extends ConsumerWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Select contact'),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.search,
+            ),
+          ),
+        ],
       ),
     );
   }
