@@ -4,6 +4,7 @@ import 'package:whatsapp_ui/info.dart';
 import 'package:whatsapp_ui/widgets/chat_list.dart';
 
 class MobileChatScreen extends StatelessWidget {
+  static const String routeName = '/mobile-chat-screen';
   const MobileChatScreen({Key? key}) : super(key: key);
 
   @override
@@ -41,16 +42,28 @@ class MobileChatScreen extends StatelessWidget {
               fillColor: mobileChatBoxColor,
               prefixIcon: const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.0),
-                child: Icon(Icons.emoji_emotions, color: Colors.grey,),
+                child: Icon(
+                  Icons.emoji_emotions,
+                  color: Colors.grey,
+                ),
               ),
               suffixIcon: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.end,
                   children: const [
-                    Icon(Icons.camera_alt, color: Colors.grey,),
-                    Icon(Icons.attach_file, color: Colors.grey,),
-                    Icon(Icons.money, color: Colors.grey,),
+                    Icon(
+                      Icons.camera_alt,
+                      color: Colors.grey,
+                    ),
+                    Icon(
+                      Icons.attach_file,
+                      color: Colors.grey,
+                    ),
+                    Icon(
+                      Icons.money,
+                      color: Colors.grey,
+                    ),
                   ],
                 ),
               ),
