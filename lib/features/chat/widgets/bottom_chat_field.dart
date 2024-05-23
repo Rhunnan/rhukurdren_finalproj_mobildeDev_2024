@@ -22,9 +22,11 @@ class _BottomChatFieldState extends ConsumerState<BottomChatField> {
     if (isShowSendButton) {
       ref.read(chatControllerProvider).sendTextMessage(
           context, _messageController.text.trim(), widget.recieverUserId);
-          setState(() {
-            _messageController.text = '';
-          },);
+      setState(
+        () {
+          _messageController.text = '';
+        },
+      );
     }
   }
 
