@@ -68,6 +68,14 @@ class AuthRepository {
     }
   }
 
+  void signOut({required BuildContext context}) async {
+    try {
+      await auth.signOut();
+    } on FirebaseAuthException catch (e) {
+      showSnackbar(context: context, content: e.message!);
+    }
+  }
+
   void saveUserDataToFirebase({
     required String name,
     required File? profilePic,

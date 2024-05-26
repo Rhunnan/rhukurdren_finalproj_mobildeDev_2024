@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:whatsapp_ui/colors.dart';
 import 'package:whatsapp_ui/features/auth/controller/auth_controller.dart';
+import 'package:whatsapp_ui/features/auth/screens/login_screen.dart';
+import 'package:whatsapp_ui/features/auth/screens/logout_screen.dart';
 import 'package:whatsapp_ui/features/select_contacts/screens/select_contacts_screen.dart';
 import 'package:whatsapp_ui/features/chat/widgets/contacts_list.dart';
 
@@ -64,7 +66,9 @@ class _MobileLayoutScreenState extends ConsumerState<MobileLayoutScreen>
             ),
             IconButton(
               icon: const Icon(Icons.more_vert, color: Colors.grey),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, LogOutScreen.routeName);
+              },
             ),
           ],
           bottom: const TabBar(
